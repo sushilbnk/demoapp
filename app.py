@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Determine the database path
 if 'WEBSITE_HOSTNAME' in os.environ:  # Running in Azure
-    DB_PATH = os.path.join('/home/site/wwwroot', 'database.db')
+    DB_PATH = os.path.join('/home/', 'database.db')
 else:  # Running locally
     DB_PATH = os.path.join(os.getcwd(), 'database.db')
 
